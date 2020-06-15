@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -12,54 +11,38 @@ const navLinkProps = (path, animationDelay) => ({
 function Navbar({pages}) {
     const [expand, setExpand] = useState(false);
     return (
-        <nav className="flex items-center flex-wrap bg-white text-primary py-2">
-            <div className="container py-2 px-2 items-center font-bold text-lg">
-                <div className="w-full flex items-center justify-between -my-2">
-                    <NavLink exact={true} to='/' className="flex items-center cursor-pointer lg:flex">
-                        <img
-                            src="/images/covid.svg"
-                            alt="logo"
-                            className="h-10 w-auto mr-3"
-                        />
-                        <div className="text-xl font-bold text-black text-primary">
-                            COVID-19 India
-                            <span className="text-red-600 uppercase live-txt blink">
-                                Live
-                            </span>
-                        </div>
-                    </NavLink>
-                    <div className="flex ml-auto mr-1">
-                        {pages.map((page, i) => {
-                            if (page.showInNavbar === true) {
-                                return (
-                                    <NavLink
-                                        exact={true}
-                                        to={page.pageLink}
-                                        key={i}
-                                        className={
-                                            'mx-1 px-3 py-4 hidden lg:block nav-link'
-                                        }
-                                        activeClassName={
-                                            'relative nav-link-active'
-                                        }
-                                    >
-                                        <span
-                                            {...navLinkProps(
-                                                page.pageLink,
-                                                page.animationDelayForNavbar
-                                            )}
-                                        >
-                                            {page.displayName}
-                                        </span>
-                                    </NavLink>
-                                );
-                            }
-                            return null;
-                        })}
-                    </div>
-                </div>
+        <nav className="navbar navbar-expand-lg navbar-dark info-color">
+        <a className="navbar-brand" href="#">Navbar</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon" />
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link waves-effect waves-light" href="#">Home <span className="sr-only">(current)</span></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link waves-effect waves-light" href="#">Features</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link waves-effect waves-light" href="#">Pricing</a>
+            </li>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div className="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+                <a className="dropdown-item waves-effect waves-light" href="#">Action</a>
+                <a className="dropdown-item waves-effect waves-light" href="#">Another action</a>
+                <a className="dropdown-item waves-effect waves-light" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <form className="form-inline">
+            <div className="md-form my-0">
+              <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
             </div>
-        </nav>
+          </form>
+        </div>
+      </nav>
     );
 }
 
