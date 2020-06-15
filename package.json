@@ -1,0 +1,64 @@
+{
+    "name": "covid19-india",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@material-ui/core": "^4.9.13",
+        "@material-ui/icons": "^4.9.1",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.5.0",
+        "@testing-library/user-event": "^7.2.1",
+        "@vx/axis": "0.0.192",
+        "@vx/group": "0.0.192",
+        "@vx/scale": "0.0.192",
+        "@vx/shape": "0.0.192",
+        "@vx/text": "0.0.192",
+        "axios": "^0.19.2",
+        "bootstrap": "^4.5.0",
+        "clsx": "^1.1.1",
+        "mdbreact": "^4.27.0",
+        "node-sass": "^4.14.1",
+        "react": "^16.13.1",
+        "react-burger-menu": "^2.6.13",
+        "react-dom": "^16.13.1",
+        "react-feather": "^2.0.8",
+        "react-helmet": "^6.0.0",
+        "react-router-dom": "^5.1.2",
+        "react-router-ga": "^1.2.3",
+        "react-router-transition": "^2.0.0",
+        "react-scripts": "^3.4.1",
+        "react-spring": "^8.0.27"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build && cp build/index.html build/404.html",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "homepage": "http://track-corona.in",
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-prettier": "^6.10.1",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.19.0",
+        "gh-pages": "^2.2.0",
+        "prettier": "^2.0.2"
+    }
+}

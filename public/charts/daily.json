@@ -1,0 +1,155 @@
+{
+    "seriesdata": {
+        "type": "line",
+        "chartdata": []
+    },
+    "metadata": {
+        "axes": {
+            "x": [0],
+            "y": [[1]],
+            "tooltip": [0, "<b style='color:{{clr}}'>{{val(2)}}: {{val(1)}}</b>"],
+            "clr": [2]
+        },
+        "columns": [
+            {
+                "dataindex": 0,
+                "columnname": "Date",
+                "datatype": "time",
+                "time": {
+                    "subfunction": "ABSDAY",
+                    "inputformat": "MMM dd, YYYY",
+                    "format": {
+                        "specifier": "MMM dd"
+                    }
+                },
+                "columnindex": 0
+            },
+            {
+                "dataindex": 1,
+                "columnname": "Total",
+                "datatype": "numeric",
+                "numeric": {
+                    "axisformat": {
+                        "type": "SIprefix"
+                    }
+                }
+            },
+            {
+                "columnname": "Total"
+            }
+        ]
+    },
+    "chart": {
+        "marginRight": 30,
+        "marginLeft": 30,
+        "axes": {
+            "xaxis": {
+                "label": {
+                    "text": ""
+                },
+                "ticklabel": {
+                    "fontSize": 10,
+                    "alignMode": "rotate(0)"
+                },
+                "axisline": {
+                    "show": true,
+                    "color": "#999"
+                },
+                "tickmark": {
+                    "size": 5,
+                    "color": "#999"
+                },
+                "grid": {
+                    "color": "#F5F5F5",
+                    "show": false,
+                    "strokeWidth": 1
+                },
+                "threshold": {
+                    "line": {
+                        "show": true,
+                        "values": [1584988200000, 1586802600000, 1588530600000, 1589740200000, 1590949800000],
+                        "color": "#9C27B0",
+                        "label": {
+                            "text": ["Lockdown 1", "Lockdown 2", "Lockdown 3", "Lockdown 4", "Lockdown 5"],
+                            "hAlign": "center",
+                            "fontSize": "10",
+                            "fontColor": "#673AB7",
+                            "fontWeight": "bold"
+                        }
+                    }
+                }
+            },
+            "yaxis": [
+                {
+                    "label": {
+                        "text": ""
+                    },
+                    "orient": "right",
+                    "axisline": {
+                        "show": false,
+                        "color": "#333"
+                    },
+                    "grid": {
+                        "strokeWidth": 1
+                    },
+                    "padding": 5,
+                    "logBase": 10,
+                    "outerPadding": 0
+                }
+            ]
+        },
+        "plot": {
+            "plotoptions": {
+                "line": {
+                    "mode": "monotone",
+                    "stacked": {
+                        "enabled": false,
+                        "outerPadding": 0
+                    },
+                    "marker": {
+                        "size": 1
+                    },
+                    "outerPadding": 0,
+                    "animation": {
+                        "easingType": "cubic-in-out",
+                        "type": "fade"
+                    }
+                },
+                "scatter": {
+                    "animation": {
+                        "easingType": "cubic-in-out",
+                        "type": "fade"
+                    },
+                    "marker": {
+                        "innerFillColor": "transparent",
+                        "innerStrokeWidth": 0,
+                        "outerFillColor": null
+                    }
+                }
+            }
+        }
+    },
+    "legend": {
+        "colors": ["#EF5350", "#ff9800", "#26A69A", "#B0BEC5"]
+    },
+    "canvas": {
+        "theme": "covid_theme",
+        "title": {
+            "text": "Daily Trend"
+        },
+        "intelligence": {
+            "dataCount": {
+                "marker": 500,
+                "animation": 5000,
+                "datalabels": 500
+            }
+        }
+    },
+    "tooltip": {
+        "sharedSeriesInfo": true,
+        "crosshair": {
+            "type": "xy",
+            "color": "#d0d0d0"
+        }
+    }
+}
