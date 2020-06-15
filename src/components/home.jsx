@@ -455,7 +455,7 @@ return (
 <React.Fragment>
   <div className="w-full my-6 fade-in" style={animationDelay(1)}>
     {fetched &&
-      <Table rows={tableData.rows} columns={tableData.columns} link={false} />}
+      <Table rows={tableData.rows} columns={tableData.columns} link={true} />}
   </div>
   
 </React.Fragment>
