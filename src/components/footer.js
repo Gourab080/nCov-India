@@ -51,12 +51,7 @@ const Footer = () => {
                 alignContent: "center",
                 fontFamily: "notosans",
               }}
-              onClick={() =>
-                ReactGa.event({
-                  category: "Telegram Clicked",
-                  action: "Telegram",
-                })
-              }
+             
             >
               <Icon.Inbox />
               &ensp; JOIN US ON TELEGRAM
@@ -83,12 +78,7 @@ const Footer = () => {
                 alignContent: "center",
                 fontFamily: "notosans",
               }}
-              onClick={() =>
-                ReactGa.event({
-                  category: "Facebook button Clicked",
-                  action: "Facebook",
-                })
-              }
+              
             >
               <Icon.Facebook />
               &ensp; LIKE ON FACEBOOK
@@ -115,12 +105,7 @@ const Footer = () => {
                 alignContent: "center",
                 fontFamily: "notosans",
               }}
-              onClick={() =>
-                ReactGa.event({
-                  category: "Twitter button Clicked",
-                  action: "Twitter",
-                })
-              }
+              
             >
               <Icon.Twitter />
               &ensp; UPDATES ON TWITTER
