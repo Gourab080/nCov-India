@@ -11,6 +11,7 @@ import ScrollToTop from "./utils/scroll-top";
 import { Helmet } from "react-helmet";
 import Analytics from "react-router-ga";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "mdbreact/dist/css/mdb.css";
 
 function App() {
     const pages = [
