@@ -6,12 +6,9 @@ import Home from "./components/home";
 import Helpline from "./components/helplines";
 import State from "./components/state";
 import "./styles/styles.css";
-import "./App.scss";
 import ScrollToTop from "./utils/scroll-top";
 import { Helmet } from "react-helmet";
 import Analytics from "react-router-ga";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "mdbreact/dist/css/mdb.css";
 
 function App() {
     const pages = [
@@ -35,7 +32,14 @@ function App() {
         },
     ];
 
-    
+    const schemaMarkup = {
+        '@context': 'http://schema.org/',
+        '@type': 'NGO',
+        name: 'Coronavirus Outbreak in India',
+        alternateName: 'COVID-19 Tracker',
+        url: 'https://www.pandemic2020.in',
+        image: 'https://www.pandemic2020.in/thumbnai.png',
+    };
 
     return (
         <div className="App">
