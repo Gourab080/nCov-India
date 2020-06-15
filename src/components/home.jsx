@@ -501,11 +501,10 @@ return (
       {/* Main Bar */}
        <div className="w-full fade-in mb-4" style={animationDelay(1)}>
             <DisplayCard ref={childRef} cards={displayCards} count={2000} />
-        {IS_SINGLE_COLUMN && getMapAndTable()}  
-       </div>  
-      
-         
+        
+       </div>
     </div>
+{IS_SINGLE_COLUMN && getMapAndTable()}  
     )}
   </div>
 </React.Fragment>
