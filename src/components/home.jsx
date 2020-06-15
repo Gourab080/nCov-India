@@ -479,14 +479,14 @@ let parentRef = useRef(null);
 return (
 <React.Fragment>
   <Helmet>
-    <title>Coronavirus Outbreak in India - track-covid19.in</title>
-    <meta name="title" content="Coronavirus Outbreak in India}: Latest Map and Case Count" />
-    <meta name="description" content={`Live statistics of Coronavirus (COVID-19) in India. Track the confirmed cases, recovered patients, and death toll of India due to the COVID-19 coronavirus.`} />
-  </Helmet>
+     </Helmet>
   <div className="container">
     {spinner && (
     <div className="flex items-center justify-center fixed h-screen w-full z-10" style={{left: 0, top: 0}}>
-      <div className="lds-dual-ring"></div>
+      <div class="sk-bounce">
+         <div class="sk-bounce-dot"></div>
+         <div class="sk-bounce-dot"></div>
+       </div>
     </div>
     )}
     {fetched && (
