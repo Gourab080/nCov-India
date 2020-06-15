@@ -10,6 +10,7 @@ import "./App.scss";
 import ScrollToTop from "./utils/scroll-top";
 import { Helmet } from "react-helmet";
 import Analytics from "react-router-ga";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     const pages = [
