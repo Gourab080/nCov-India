@@ -453,7 +453,7 @@ updateChartStore(chartStore);
 function getMapAndTable() {
 return (
 <React.Fragment>
-  <div className="w-full my-6 fade-in" style={animationDelay(1)}>
+  <div className="w-full fade-in" style={animationDelay(1)}>
     {fetched &&
       <Table rows={tableData.rows} columns={tableData.columns} link={true} />}
   </div>
@@ -503,8 +503,8 @@ return (
             <DisplayCard ref={childRef} cards={displayCards} count={2000} />
         
        </div>
+     {IS_SINGLE_COLUMN && getMapAndTable()}
     </div>
-{IS_SINGLE_COLUMN && getMapAndTable()}  
     )}
   </div>
 </React.Fragment>
