@@ -504,6 +504,7 @@ return (
        </div>  
       {IS_SINGLE_COLUMN && getMapAndTable()}      
     </div>
+    <Footer />
     )}
   </div>
 </React.Fragment>
