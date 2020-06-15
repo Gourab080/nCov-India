@@ -42,7 +42,7 @@ function Navbar({pages}) {
           {pages.map((page, i) => {
             if (page.showInNavbar === true) {
               return (
-                <Link
+                <NavLink
                   to={page.pageLink}
                   key={i}
                   onClick={() => {
@@ -57,7 +57,7 @@ function Navbar({pages}) {
                   >
                     {page.displayName}
                   </span>
-                </Link>
+                </NavLink>
               );
             }
             return null;
