@@ -34,7 +34,6 @@ import PauseIcon from '@material-ui/icons/Pause';
 import ReplayIcon from '@material-ui/icons/Replay';
 import IconButton from '@material-ui/core/IconButton';
 import Footer from './footer';
-import Last from './last';
 import SocialCard from './social';
 const d3 = window.d3;
 const IS_DESKTOP = !IS_MOBILE_DEVICE;
@@ -519,7 +518,6 @@ return (
         
         
       </div>
-      <Footer />
     </div>
     )}
   </div>
