@@ -503,7 +503,7 @@ return (
             <DisplayCard ref={childRef} cards={displayCards} count={2000} />
        </div>  
       {IS_SINGLE_COLUMN && getMapAndTable()}  
-     <Footer />    
+         
     </div>
     )}
   </div>
