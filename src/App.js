@@ -35,14 +35,7 @@ function App() {
         },
     ];
 
-    const schemaMarkup = {
-        '@context': 'http://schema.org/',
-        '@type': 'NGO',
-        name: 'Coronavirus Outbreak in India: Latest Map and Case Count',
-        alternateName: 'COVID-19 Tracker',
-        url: 'https://track-covid-19.in',
-        image: 'https://www.track-covid19.in/thumbnail.png',
-    };
+    
 
     return (
         <div className="App">
@@ -51,7 +44,7 @@ function App() {
             </Helmet>
             <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <ScrollToTop />
-                <Analytics id="">
+                <Analytics id="UA-161766535-2">
                     <Route
                         render={({location}) => (
                             <div className="Routing">
